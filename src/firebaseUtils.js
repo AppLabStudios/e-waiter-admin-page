@@ -5,8 +5,10 @@ import {
   signOut,
   onAuthStateChanged,
   updateProfile,
-  sendPasswordResetEmail,
-  
+  sendPasswordResetEmail
+} from 'firebase/auth';
+
+import {
   // Firestore functions
   collection,
   doc,
@@ -19,15 +21,18 @@ import {
   where,
   orderBy,
   limit,
-  onSnapshot,
-  
+  onSnapshot
+} from 'firebase/firestore';
+
+import {
   // Storage functions
   ref,
   uploadBytes,
   getDownloadURL,
   deleteObject,
   listAll
-} from 'firebase/firestore';
+} from 'firebase/storage';
+
 import { auth, db, storage } from './firebase';
 
 // ==================== AUTHENTICATION UTILITIES ====================
