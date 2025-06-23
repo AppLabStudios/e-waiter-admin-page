@@ -73,7 +73,7 @@ const SignUp = () => {
         city: data.city,
         createdAt: new Date().toISOString(),
         userId: userCredential.user.uid,
-        status: 'active'
+        status: true
       });
 
       setSuccess(true);
